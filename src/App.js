@@ -3,6 +3,14 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Dashboard from './Components/Dashboard';
 import Card from './Components/Card';
+import Dublin from './Components/Images/Dublin.jpg';
+import MtVinson from './Components/Images/MtVinson.jpg';
+import MtFuji from './Components/Images/MtFuji.jpg';
+import Sydney from './Components/Images/Sydney.jpg';
+import Safari from './Components/Images/Safari.jpg';
+import Yellowstone from './Components/Images/Yellowstone.jpg';
+import RiodeJaniero from './Components/Images/RiodeJaniero.jpg';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -45,13 +53,13 @@ class App extends React.Component {
         <Navbar />
         <Dashboard FirstDestination={this.state.FirstDestination} SecondDestination={this.state.SecondDestination} ThirdDestination={this.state.ThirdDestination} FourthDestination={this.state.FourthDestination}/>
         <div className="card-container">
-          <Card type="travel" title="USA, North America" makeChoice={this.makeChoice} />
-          <Card type="travel" title="Brazil, South America" makeChoice={this.makeChoice} />
-          <Card type="travel" title="South Africa, Africa" makeChoice={this.makeChoice} />
-          <Card type="travel" title="Ireland, Europe" makeChoice={this.makeChoice} />
-          <Card type="travel" title="Japan, Asia" makeChoice={this.makeChoice} />
-          <Card type="travel" title="Sydney, Australia" makeChoice={this.makeChoice} />
-          <Card type="travel" title="Mt.Vinson, Antarctica" makeChoice={this.makeChoice} />
+          <Card type="travel" title="USA, North America" makeChoice={this.makeChoice} imgurl={Yellowstone}/>
+          <Card type="travel" title="Brazil, South America" makeChoice={this.makeChoice} imgurl={RiodeJaniero}/>
+          <Card type="travel" title="South Africa, Africa" makeChoice={this.makeChoice} imgurl={Safari}/>
+          <Card type="travel" title="Ireland, Europe" makeChoice={this.makeChoice} imgurl={Dublin}/>
+          <Card type="travel" title="Japan, Asia" makeChoice={this.makeChoice} imgurl={MtFuji}/>
+          <Card type="travel" title="Sydney, Australia" makeChoice={this.makeChoice} imgurl={Sydney}/>
+          <Card type="travel" title="Mt.Vinson, Antarctica" makeChoice={this.makeChoice} imgurl={MtVinson}/>
           
           
 
